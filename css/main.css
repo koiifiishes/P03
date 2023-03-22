@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body{
+    background-color: #fefaec;
+    color: #8c8299;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.75rem;
+}
+
+nav{
+    background-color: #8c8299;
+    padding: 1rem;
+}
+
+nav a{
+    color: #e4c2cd;
+    padding: 0 1rem 0 1rem;
+    text-decoration: none;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
