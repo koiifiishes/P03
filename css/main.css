@@ -5,7 +5,7 @@ body{
     color: #8c8299;
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 0.75rem;
+    font-size: 0.8em;
 }
 
 nav{
@@ -21,15 +21,40 @@ nav a{
     text-transform: uppercase;
 }
 
+.no_margin{
+    margin: 0;
+}
+
 h1{
-    text-transform: uppercase;
     letter-spacing: 0.1rem;
+    font-size: 2rem;
 }
 
 .h2_styleguide{
     background-color: #e4c2cd;
 }
 
+.p_75_right{
+    width: 75%;
+    float: right;
+}
+
+.highlight{
+    color: #e4c2cd;
+}
+
+img{
+    width: 100%;
+}
+
+.img_half{
+    width: 50%;
+}
+
+.align_right{
+    text-align: right;
+}
+
 .box_main{
-    margin: 2rem;
+    margin: 3rem;
 }
