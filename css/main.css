@@ -22,8 +22,18 @@ nav a{
     text-transform: uppercase;
 }
 
+nav a:hover, nav a:focus{
+    color: white;
+}
+
 section{
     margin-bottom: 3rem;
+}
+
+code{
+    background-color: white;
+    color: #a78fa6;
+    padding: 1rem;
 }
 
 .no_margin{
@@ -52,6 +62,19 @@ p{
     color: #e4c2cd;
 }
 
+.low_opacity{
+    opacity: 30%;
+}
+
+.in_text{
+    color: #e4c2cd;
+}
+
+.in_text:hover, .in_text:focus{
+    color: #f5dce4;
+    text-decoration: none;
+}
+
 img{
     width: 100%;
 }
@@ -70,4 +93,33 @@ img{
 
 .box_main{
     margin: 3rem;
+}
+
+.palette{
+    width: 75px;
+    height: 50px;
+}
+
+.palette_border{
+    border: 1px solid #a78fa6;
+}
+
+.purple{
+    background-color: #8c8299;
+}
+
+.violet{
+    background-color: #e4c2cd;
+}
+
+.pink{
+    background-color: #f5dce4;
+}
+
+.lightyellow{
+    background-color: #fefaec;
+}
+
+.white{
+    background-color: white;
 }
