@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;350;400&display=swap');
 
 body{
     background-color: #fefaec;
     color: #8c8299;
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 0.8em;
+    /* font-size: 0.8em; */
 }
 
 nav{
     background-color: #8c8299;
     padding: 1rem;
+    font-size: 0.8em;
 }
 
 nav a{
@@ -21,6 +22,10 @@ nav a{
     text-transform: uppercase;
 }
 
+section{
+    margin-bottom: 3rem;
+}
+
 .no_margin{
     margin: 0;
 }
@@ -28,6 +33,10 @@ nav a{
 h1{
     letter-spacing: 0.1rem;
     font-size: 2rem;
+}
+
+p{
+    font-weight: 350;
 }
 
 .h2_styleguide{
@@ -49,6 +58,10 @@ img{
 
 .img_half{
     width: 50%;
+}
+
+.img_third{
+    width: 33%;
 }
 
 .align_right{
