@@ -1,11 +1,26 @@
 .flexbox{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+}
+
+.flexbox_sub{
+    display: flex;
+    flex: 1 1 0;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .flexbox_item{
     flex: 1 1 0;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.center{
+    align-items: center;
 }
 
 .flexbox_palette{
@@ -14,7 +29,7 @@
     justify-content: center;
 }
 
-.flexbox_sub{
+.flexbox_palette .flexbox_sub{
     display: flex;
     flex: 0 1 0;
     margin: 0 2rem 0 2rem;
@@ -24,6 +39,3 @@
     text-align: center;
 }
 
-.flexbox_sub_item{
-
-}
