@@ -24,7 +24,7 @@
         <div class="box_main">
         <h1>My Work</h1>
 
-        <section>
+        <section class="add_padding">
             <h2>► PROJECT <span class="highlight">ONE</span> : PET SALON</h2>
             <div class="flexbox">
                 <img src="img/process1_4.png" class="flexbox_item img_third">
@@ -32,7 +32,15 @@
                 <img src="img/process1_3.png" class="flexbox_item img_third">
             </div>
             <p>'Pet Salon' is a multimedia simulation created as a final project for IAT 265 (Multimedia Programming for Art and Design) in Spring 2022 at Simon Fraser University. The project consists of images, text and music implemented using Java to create an interactive simulation for the user.</p>
-            <p>In 'Pet Salon', the user is guided through a process of operating a dog grooming salon. The user can follow the instructions through series of mouse clicks, mouse drags, animations, and more.</p>
+            <div class="flexbox">
+                <div class="flexbox_sub">
+                    <p class="padding_right">To begin the assignment, I had create a proposal with a short description of the project and outline some main coding elements that I plan to include. In 'Pet Salon', the user is guided through a process of operating a dog grooming salon. The user can follow the instructions through series of mouse clicks, mouse drags, animations, and more. My proceess began with creating a list of items and tasks that the user can preform in the simulation: light switches to turn on the lights, soap dispenser to get soap, switches to turn on the shower, towel to dry the dog, ribbons and bandana to dress-up the dog, etc. Based on this list, I started sketching out how I wanted these elements to be laid out in the simulation. From the user's perspective, the dog would be on a grooming table and all the items and tools around the dog. After the initial sketch, I decided to plan out the colours by colouring underneath my sketch roughly. I wanted to make sure all elements were distinct from one another so I had to create enough contrast between them. I used a mix of light and dark colours between background and foreground elements to push that distinction.</p>
+                </div>
+                <div class="flexbox_sub column">
+                    <img src="img/process1_5.PNG" class="flexbox_item">
+                    <img src="img/process1_6.PNG" class="flexbox_item">
+                </div>
+            </div>
             <p>The project required a basic set of criteria to be integrated within the simulation, this included: generate perlin noise graphics, use of recursion to create fractal graphics, and use of decorator patterns.</p>
             <p>The perlin noise graphics were generated using a for-loop in Java which generated noise in the form of randomized values. These values are then used to create many grey circles that overlap each other to create an effect that emulates the texture of soapy suds. To further add variation to user interactions, the more soap that the user picks up, the more dense the perlin noise suds will look.</p>
             <p>The fractal graphics require the use of recursion methods which means that a function in Java will call upon itself. Through the use of recursion, I was able to generate a plant graphic that branches out into smaller and smaller branches allowing it to resemble a life-like tree.</p>
