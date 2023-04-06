@@ -21,6 +21,26 @@
     text-align: right;
 }
 
+.flexbox_works{
+    display:flex;
+    flex: 1 1 0;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    margin: 0.5rem;
+    transition-property: box-shadow, opacity;
+    transition-duration: 0.5s;
+    background-color: white;
+    border: 1px solid #8c8299;
+    position: relative;
+}
+
+.flexbox_works:hover, .flexbox_works:focus{
+    box-shadow: 0.5rem 0.5rem #8c8299;
+    opacity: 0.8;
+    /* cursor: pointer; */
+}
+
 .flexbox_img{
     flex: 1 1 0;
     padding: 0.5rem;
@@ -32,6 +52,10 @@
 
 .center{
     align-items: center;
+}
+
+.stretch{
+    align-items: stretch;
 }
 
 .flexbox_palette{

@@ -11,6 +11,7 @@ nav{
     background-color: #8c8299;
     padding: 1rem;
     font-size: 0.8em;
+    overflow: hidden;
 }
 
 nav a{
@@ -20,10 +21,51 @@ nav a{
     letter-spacing: 0.2rem;
     text-transform: uppercase;
     position: relative;
+    transition-property: color;
+    transition-duration: 0.5s;
 }
 
 nav a:hover, nav a:focus{
     color: white;
+}
+
+/* Reference: https://codepen.io/nandun_malinda/pen/LvWpgL */
+.menu, .drop-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.menu li{
+    float: left;
+}
+
+.drop-menu {
+    display: none;
+    position: absolute;
+    padding-top: 1rem;
+    background-color: #8c8299;
+    color: #e4c2cd;
+}
+
+.drop-menu-item {
+    width: 80%;
+    margin: 1rem;
+}
+
+.drop-menu-item:hover {
+    background-color: #8c8299;
+    color: #e4c2cd;
+}
+
+.drop-menu-item a {
+    color: #e4c2cd;
+}
+
+.menu-item:hover .drop-menu {
+    display: block;
 }
 
 /*Reference used: https://css-irl.info/animating-underlines/*/
@@ -108,6 +150,30 @@ p, ul{
     opacity: 30%;
 }
 
+.a_project{
+    color: #8c8299;
+    text-decoration: none;
+    position: relative;
+}
+
+/*Reference used: https://css-irl.info/animating-underlines/*/
+.a_project::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: #8c8299;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+.a_project:hover::after, .a_project:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+  }
+
 .in_text{
     color: #e4c2cd;
 }
@@ -116,6 +182,26 @@ p, ul{
     color: #f5dce4;
     text-decoration: none;
 }
+
+.link_button{
+    background-color: #8c8299;
+    color: #e4c2cd;
+    display: block;
+    width: 100%;
+    padding: 2rem 0 2rem 0;
+    text-decoration: none;
+    transition-property: background-color, letter-spacing, border-radius; 
+    transition-duration: 0.5s;
+    text-transform: uppercase;
+}
+
+.link_button:hover, .link_button:focus {
+    background-color: #e4c2cd;
+    color: white;
+    letter-spacing: 0.2rem;
+    border-radius: 0.5rem;
+}
+
 
 hr{
     border-top: 5px dotted #a78fa6;
