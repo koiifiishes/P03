@@ -100,11 +100,6 @@ p, ul{
     background-color: #e4c2cd;
 }
 
-.p_75_right{
-    width: 75%;
-    float: right;
-}
-
 .highlight{
     color: #e4c2cd;
 }
@@ -141,10 +136,6 @@ img{
 
 .img_quart{
     width: 25%;
-}
-
-.align_right{
-    text-align: right;
 }
 
 .box_main{

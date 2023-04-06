@@ -17,6 +17,10 @@
     flex-direction: row;
 }
 
+.flexbox_home:first-child{
+    text-align: right;
+}
+
 .flexbox_img{
     flex: 1 1 0;
     padding: 0.5rem;
@@ -68,6 +72,11 @@
 
     .flexbox_margin{
         margin: 0;
+    }
+
+    .flexbox_home_item{
+        order: 2;
+        text-align: center;
     }
 
 }
