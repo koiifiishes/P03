@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title></title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="css/main.css" rel="stylesheet">
-        <link href="css/flex.css" rel="stylesheet">
-    </head>
-    <body>
+    <title></title>
 
-        <header>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/flex.css" rel="stylesheet">
+</head>
 
-            <nav>
-                <a href="index.html">Style Guide</a>
-                <a href="home.html">Home</a>
-                <a href="work.html">Work</a>
-            </nav>
+<body>
 
-        </header>
+    <header>
 
-        <div class="box_main">
+        <nav>
+            <a href="index.html">Style Guide</a>
+            <a href="home.html">Home</a>
+            <a href="work.html">Work</a>
+        </nav>
+
+    </header>
+
+    <div class="box_main">
         <h1>My Work</h1>
 
         <section class="add_padding">
@@ -31,38 +33,75 @@
                 <img src="img/process1_1.png" class="flexbox_item img_third">
                 <img src="img/process1_3.png" class="flexbox_item img_third">
             </div>
-            <p>'Pet Salon' is a multimedia simulation created as a final project for IAT 265 (Multimedia Programming for Art and Design) in Spring 2022 at Simon Fraser University. The project consists of images, text and music implemented using Java to create an interactive simulation for the user.</p>
+            <p>'Pet Salon' is a multimedia simulation created as a final project for IAT 265 (Multimedia Programming for
+                Art and Design) in Spring 2022 at Simon Fraser University. The project consists of images, text and
+                music implemented using Java to create an interactive simulation for the user.</p>
+            <p>To begin the assignment, I had create a proposal with a short description of the project and outline some
+                main coding elements that I plan to include. In 'Pet Salon', the user is guided through a process of
+                operating a dog grooming salon. The user can follow the instructions through series of mouse clicks,
+                mouse drags, animations, and more. My proceess began with creating a list of items and tasks that the
+                user can preform in the simulation: light switches to turn on the lights, soap dispenser to get soap,
+                switches to turn on the shower, towel to dry the dog, ribbons and bandana to dress-up the dog, etc.
+                Based on this list, I started sketching out how I wanted these elements to be laid out in the
+                simulation. From the user's perspective, the dog would be on a grooming table and all the items and
+                tools around the dog. After the initial sketch, I decided to plan out the colours by colouring
+                underneath my sketch roughly. I wanted to make sure all elements were distinct from one another so I had
+                to create enough contrast between them. I used a mix of light and dark colours between background and
+                foreground elements to push that distinction.</p>
             <div class="flexbox">
-                <div class="flexbox_sub">
-                    <p class="padding_right">To begin the assignment, I had create a proposal with a short description of the project and outline some main coding elements that I plan to include. In 'Pet Salon', the user is guided through a process of operating a dog grooming salon. The user can follow the instructions through series of mouse clicks, mouse drags, animations, and more. My proceess began with creating a list of items and tasks that the user can preform in the simulation: light switches to turn on the lights, soap dispenser to get soap, switches to turn on the shower, towel to dry the dog, ribbons and bandana to dress-up the dog, etc. Based on this list, I started sketching out how I wanted these elements to be laid out in the simulation. From the user's perspective, the dog would be on a grooming table and all the items and tools around the dog. After the initial sketch, I decided to plan out the colours by colouring underneath my sketch roughly. I wanted to make sure all elements were distinct from one another so I had to create enough contrast between them. I used a mix of light and dark colours between background and foreground elements to push that distinction.</p>
-                </div>
-                <div class="flexbox_sub column">
-                    <img src="img/process1_5.PNG" class="flexbox_item">
-                    <img src="img/process1_6.PNG" class="flexbox_item">
-                </div>
+                <img src="img/process1_5.PNG" class="flexbox_item img_third">
+                <img src="img/process1_6.PNG" class="flexbox_item img_third">
             </div>
-            <p>The project required a basic set of criteria to be integrated within the simulation, this included: generate perlin noise graphics, use of recursion to create fractal graphics, and use of decorator patterns.</p>
-            <p>The perlin noise graphics were generated using a for-loop in Java which generated noise in the form of randomized values. These values are then used to create many grey circles that overlap each other to create an effect that emulates the texture of soapy suds. To further add variation to user interactions, the more soap that the user picks up, the more dense the perlin noise suds will look.</p>
-            <p>The fractal graphics require the use of recursion methods which means that a function in Java will call upon itself. Through the use of recursion, I was able to generate a plant graphic that branches out into smaller and smaller branches allowing it to resemble a life-like tree.</p>
-            <p>Finally, decorator patterns are used to dress up the dog towards the end of the simulation. The use of decorator patterns allows the users to add new functionality (in this case: dress-up objects) to an object (the dog) without altering the objects original methods. In 'Pet Salon', the user can add ribbons, bows and jewelery to the dog by clicking the bins that hold the items and then clicking anywhere on the dog to apply the decorator. </p>
+            <p>The project required a basic set of criteria to be integrated within the simulation, this included:
+                <ul>
+                    <li>Generate perlin noise graphics</li>
+                    <li>Use recursion to create fractal graphics</li>
+                    <li>Use decorator patterns</li>
+                </ul>
+                </p>
+            <p>The perlin noise graphics were generated using a for-loop in Java which generated noise in the form of
+                randomized values. These values are then used to create many grey circles that overlap each other to
+                create an effect that emulates the texture of soapy suds. To further add variation to user interactions,
+                the more soap that the user picks up, the more dense the perlin noise suds will look.</p>
+            <p>The fractal graphics require the use of recursion methods which means that a function in Java will call
+                upon itself. Through the use of recursion, I was able to generate a plant graphic that branches out into
+                smaller and smaller branches allowing it to resemble a life-like tree.</p>
+            <p>Finally, decorator patterns are used to dress up the dog towards the end of the simulation. The use of
+                decorator patterns allows the users to add new functionality (in this case: dress-up objects) to an
+                object (the dog) without altering the objects original methods. In 'Pet Salon', the user can add
+                ribbons, bows and jewelery to the dog by clicking the bins that hold the items and then clicking
+                anywhere on the dog to apply the decorator. </p>
 
             <p class="low_opacity">2022</p>
         </section>
+
+        <hr>
+        
         <section>
             <h2>► PROJECT <span class="highlight">TWO</span> : THE GUARDIAN</h2>
             <img src="img/artwork_1.png" class="img_half">
-            <p>'The Guardian' is a personal illustration project representing the mythical creature, Kelpie, in its environment. </p>
-            <p>This illustration was a challenge for myself back in 2021 to create an original piece of artwork every month focusing on mythical creatures. I find that mythical creates can be interpreted in a variety of ways so this allowed me to add a more personal touch to my illustrations. When working on this illustration, it took a lot of research in terms of anatomy, colour palette, environment of the background and the technique I wanted to apply to the illustration.</p>
-            <p>Kelpie are horse-like creatures so I had to study some horse anatomy to familiarize myself. I took images of horses in the pose I wanted and created red lines to study the basic shape of each part of the horse. I later applied these shapes to my initial sketch and eventually used these guidelines to stylize the creature.</p>
+            <p>'The Guardian' is a personal illustration project representing the mythical creature, Kelpie, in its
+                environment. </p>
+            <p>This illustration was a challenge for myself back in 2021 to create an original piece of artwork every
+                month focusing on mythical creatures. I find that mythical creates can be interpreted in a variety of
+                ways so this allowed me to add a more personal touch to my illustrations. When working on this
+                illustration, it took a lot of research in terms of anatomy, colour palette, environment of the
+                background and the technique I wanted to apply to the illustration.</p>
+            <p>Kelpie are horse-like creatures so I had to study some horse anatomy to familiarize myself. I took images
+                of horses in the pose I wanted and created red lines to study the basic shape of each part of the horse.
+                I later applied these shapes to my initial sketch and eventually used these guidelines to stylize the
+                creature.</p>
             <div class="flexbox">
                 <img src="img/process2_1.png" class="flexbox_item img_third">
                 <img src="img/process2_2.jpeg" class="flexbox_item img_third">
                 <img src="img/process2_3.jpeg" class="flexbox_item img_third">
             </div>
-            <p>For the environment, I wanted the Kelpie to be in the middle of a body of water. I looked for inspiration on of swamps which consist of mostly blues and greens.</p>
+            <p>For the environment, I wanted the Kelpie to be in the middle of a body of water. I looked for inspiration
+                on of swamps which consist of mostly blues and greens.</p>
             <p class="low_opacity">2021</p>
         </section>
-        </div>
+    </div>
 
-    </body>
+</body>
+
 </html>
