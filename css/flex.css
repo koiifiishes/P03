@@ -39,3 +39,18 @@
     text-align: center;
 }
 
+@media screen and (max-width: 75rem){
+
+}
+
+@media screen and (max-width: 50rem){
+    .flexbox{
+        flex-direction: column;
+    }
+
+    img, .img_half, .img_third{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+}

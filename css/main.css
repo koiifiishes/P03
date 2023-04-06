@@ -26,7 +26,7 @@ nav a:hover, nav a:focus{
 }
 
 section{
-    margin-bottom: 3rem;
+    margin: 1.5rem 0 1.5rem 0;
 }
 
 code{
@@ -52,7 +52,7 @@ h2{
     font-size: 1.5rem;
 }
 
-p{
+p, ul{
     font-weight: 350;
     line-height: 1.5rem;
     font-size: 1rem;
@@ -84,8 +84,14 @@ p{
     text-decoration: none;
 }
 
+hr{
+    border-top: 5px dotted #a78fa6;
+    opacity: 30%;
+}
+
 img{
     width: 100%;
+    padding: 0.5rem;
 }
 
 .img_half{
