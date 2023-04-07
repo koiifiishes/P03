@@ -9,24 +9,27 @@ body{
 
 nav{
     background-color: #8c8299;
-    padding: 1rem;
     font-size: 0.8em;
     overflow: hidden;
 }
 
+/* Reference used: https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-offset*/
 nav a{
     color: #e4c2cd;
     margin: 0 1rem 0 1rem;
     text-decoration: none;
+    text-underline-offset: 0.1rem;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
     position: relative;
-    transition-property: color;
+    transition-property: color, text-underline-offset;
     transition-duration: 0.5s;
 }
 
 nav a:hover, nav a:focus{
     color: white;
+    text-decoration: underline 0.15rem;
+    text-underline-offset: 0.5rem;
 }
 
 /* Reference: https://codepen.io/nandun_malinda/pen/LvWpgL */
@@ -45,14 +48,12 @@ nav a:hover, nav a:focus{
 .drop-menu {
     display: none;
     position: absolute;
-    padding-top: 1rem;
     background-color: #8c8299;
     color: #e4c2cd;
 }
 
 .drop-menu-item {
-    width: 80%;
-    margin: 1rem;
+    width: 100%;
 }
 
 .drop-menu-item:hover {
@@ -68,24 +69,17 @@ nav a:hover, nav a:focus{
     display: block;
 }
 
-/*Reference used: https://css-irl.info/animating-underlines/*/
-/* Fade in */
-nav a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0.1em;
-    background-color: white;
-    opacity: 0;
-    transition: opacity 300ms, transform 300ms;
-  }
-  
-nav a:hover::after, nav a:focus::after {
-    opacity: 1;
-    transform: translate3d(0, 0.2em, 0);
-  }
+.menu_button{
+    display: inline-block;
+    background-color: #8c8299;
+    padding: 1rem;
+}
+
+/*Reference used: http://jsfiddle.net/xj76zn77/1/*/
+.last ul{
+    right: 0px;
+    left: auto;
+}
 
 section{
     margin: 1.5rem 0 1.5rem 0;
@@ -103,7 +97,7 @@ code{
 
 /* used in section class of work.html */
 .add_padding{
-    padding: 0 2rem 0 2rem;
+    padding: 0 5rem 0 5rem;
 }
 
 .padding_right{
@@ -117,6 +111,10 @@ code{
 
 .flexbox_margin{
     margin-bottom: 1rem;
+}
+
+.float_right{
+    float: right;
 }
 
 h1{
@@ -216,7 +214,7 @@ img{
     width: 50%;
 }
 
-.img_third{
+.img_third, .width_third{
     width: 33%;
 }
 
@@ -225,7 +223,13 @@ img{
 }
 
 .box_main{
-    margin: 3rem;
+    margin: 3rem 12rem 3rem 12rem;
+    text-align: center;
+}
+
+.box_main_wide{
+    margin: 3rem 5rem 3rem 5rem;
+    text-align: center;
 }
 
 .palette{
