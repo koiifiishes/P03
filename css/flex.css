@@ -140,12 +140,13 @@
         width: 100%;
     }
 
+    /* Reference used: https://css-tricks.com/full-width-containers-limited-width-parents/
     .img_full_width{
         width: 100vw;
         position: relative;
         margin-left: -50vw;
         margin-right: -50vw;
-    }
+    } */
 
     .add_padding, .padding_right, .padding_left{
         padding: 0;
