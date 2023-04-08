@@ -89,6 +89,10 @@
     align-items: stretch;
 }
 
+.align_text_left{
+    text-align: left;
+}
+
 .flexbox_palette{
     display: flex;
     align-items: flex-start;
@@ -106,7 +110,7 @@
 }
 
 @media screen and (max-width: 75rem){
-    .box_main{
+    .box_main, .box_main_wide{
         transition-property: margin;
         transition: 0.5s;
         margin: 3rem 7rem 3rem 7rem;
@@ -116,7 +120,7 @@
 
 @media screen and (max-width: 65rem){
     
-    .box_main{
+    .box_main, .box_main_wide{
         transition-property: margin;
         transition: 0.5s;
         margin: 3rem;
@@ -130,10 +134,20 @@
         flex-direction: column;
     }
 
+    .box_main_wide{
+        transition-property: margin;
+        transition: 0.5s;
+        margin: 1rem;
+    }
+
 
     img, .img_half, .img_third, .img_quart{
         width: 100%;
         margin-bottom: 1rem;
+    }
+
+    figure{
+        margin: 0;
     }
 
     .width_third{
