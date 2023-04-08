@@ -9,6 +9,9 @@
 
     <link href="css/main.css" rel="stylesheet">
     <link href="css/flex.css" rel="stylesheet">
+    <link href="css/modal.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -22,7 +25,7 @@
                 <a href="index.html" class="menu-item menu_button">Style Guide</a>
                 <a href="https://www.etsy.com/shop/sleepyamphy/" class="menu-item menu_button">Shop</a>
                 <div class="menu-item last">
-                    <a href="work.html" class="menu_button">Work</a>
+                    <a href="work.html" class="menu_button">Work <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                     <ul class="drop-menu">
                         <li class="drop-menu-item"><a href="project1.html" class="menu_button">Pet Salon</a></li>
                         <li class="drop-menu-item"><a href="project2.html" class="menu_button">The Guardian</a></li>
@@ -41,6 +44,7 @@
             <h2>Role: Lead Artist</h2>
             
             <img src="img/artwork_1.png">
+            <h3>Introduction</h3>
             <p>'The Guardian' is a personal illustration project representing the mythical creature, Kelpie, in its
                 environment. </p>
             <p>This illustration was a challenge for myself back in 2021 to create an original piece of artwork every
@@ -62,7 +66,19 @@
                 on of swamps which consist of mostly blues and greens.</p>
             <p class="low_opacity">2021 | Programs: Procreate</p>
         </section>
+
+        <a href="work.html" class="button">View Other Projects</a>
     </div>
+
+    <!-- /*Reference used: https://codepen.io/sinisag/pen/vPEajE*/ -->
+    <!-- The Modal -->
+    <div id="modal" class="modal">
+        <span id="modal-close" class="modal-close">&times;</span>
+        <img id="modal-content" class="modal-content">
+        <div id="modal-caption" class="modal-caption"></div>
+    </div>
+
+    <script src="js/script.js"></script>
 
 </body>
 
