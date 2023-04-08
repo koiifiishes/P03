@@ -24,7 +24,7 @@
                 <a href="index.html" class="menu-item menu_button">Style Guide</a>
                 <a href="https://www.etsy.com/shop/sleepyamphy/" class="menu-item menu_button">Shop</a>
                 <div class="menu-item last">
-                    <a href="work.html" class="menu_button">Work</a>
+                    <a href="work.html" class="menu_button">Work <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                     <ul class="drop-menu">
                         <li class="drop-menu-item"><a href="project1.html" class="menu_button">Pet Salon</a></li>
                         <li class="drop-menu-item"><a href="project2.html" class="menu_button">The Guardian</a></li>
@@ -48,10 +48,7 @@
             </video>
 
             <h3>Introduction</h3>
-            <p>'Pet Salon' is a multimedia simulation created as a final project for IAT 265 (Multimedia Programming for
-                Art and Design) in Spring 2022 at Simon Fraser University. The project consists of images, text and
-                music implemented using Java to create an interactive simulation for the user.
-            </p>
+            <p>'Pet Salon' is a multimedia simulation created as a final project for IAT 265 (Multimedia Programming for Art and Design) in Spring 2022 at Simon Fraser University. The project consists of images, text, and music implemented using Java to create an interactive simulation for the user.</p>
             <!-- <div class="flexbox">
                 <img src="img/process1_4.png" class="flexbox_img img_third">
                 <img src="img/process1_1.png" class="flexbox_img img_third">
@@ -71,16 +68,17 @@
 
             <h3>Limitations</h3>
 
-            <p>I was familar with generating simple shapes using Java's Graphics/Graphics2D class, but creating the graphics like perlin noise and fractal graphics required understanding how for-loops and recursive functions would affect the Graphics class.</p>
-            <p>We were taught factory classes for decorator patterns a week before the project due date, so I did not have much knowledge of the topic prior. I had to learn how to apply them to my project within a small time frame.</p>
+            <p>I was familiar with generating simple shapes using Java's Graphics/Graphics2D class, but creating the graphics like Perlin noise and fractal graphics required understanding how for-loops and recursive functions would affect the Graphics class.</p>
+            <p>We were taught factory classes for decorator patterns a week before the project's due date, so I did not have much knowledge of the topic prior. I had to learn how to apply them to my project within a small time frame.</p>
 
-            <h3>Solution</h3>
+            <h3 class="margin_top">Solution</h3>
 
             <h4>Sketches</h4>
 
-            <p></p>
+            <p>I begin my process by creating a list of items and tasks that the user can perform in 'Pet Salon'. This included: a light switch to turn on the lights, a soap dispenser to get soap, a switch to turn on the shower, a towel to dry the dog, decorative items to dress up the dog, etc. By creating a list, I can get a basic idea of the items I would need to draw for my simulation.</p>
+            <p>I came up with an initial sketch where a dog is sitting in the middle of a grooming table with all the items located around the it. After the initial sketch, I planned out the colours by colouring underneath my sketch roughly to make sure I had enough contrast between each element.</p>
 
-            <div class="flexbox">
+            <div class="flexbox stretch">
                 <figure>
                     <div class="modal-wrapper">
                         <img class="modal-target" alt="Initial sketch for Pet Salon." src="img/process1_5.PNG">
@@ -95,43 +93,59 @@
                 </figure>
             </div>
 
-            <h3>Reflection</h3>
-            
-            <p>To begin the assignment, I came up with a proposal with a short description of the project and outline some
-                main coding elements that I plan to include. In 'Pet Salon', the user is guided through a process of
-                operating a dog grooming salon. The user can follow the instructions through series of mouse clicks,
-                mouse drags, animations, and more. My process began with creating a list of items and tasks that the
-                user can preform in the simulation: light switches to turn on the lights, soap dispenser to get soap,
-                switches to turn on the shower, towel to dry the dog, ribbons and bandana to dress-up the dog, etc.
-                Based on this list, I started sketching out how I wanted these elements to be laid out in the
-                simulation. From the user's perspective, the dog would be on a grooming table and all the items and
-                tools around the dog. After the initial sketch, I decided to plan out the colours by colouring
-                underneath my sketch roughly. I wanted to make sure all elements were distinct from one another so I had
-                to create enough contrast between them. I used a mix of light and dark colours between background and
-                foreground elements to push that distinction.</p>
+            <h4>Perlin Noise</h4>
 
-            <div class="flexbox flexbox_margin">
-                <div class="flexbox_item">
-                    <img src="img/process1_8.png" class="flexbox_item_sub flexbox_img">
-                    <img src="img/process1_9.png" class="flexbox_item_sub flexbox_img">
-                </div>
-                <p class="flexbox_item padding_left">The perlin noise graphics were generated using a for-loop in Java which generated noise in the form of
-                    randomized values. These values are then used to create many grey circles that overlap each other to
-                    create an effect that emulates the texture of soapy suds. To further add variation to user interactions,
-                    the more soap that the user picks up, the more dense the perlin noise suds will look.</p>
+            <p>The Perlin noise graphics were generated using a for-loop in Java which generated noise in the form of randomized values. These values are then used to create many grey circles that overlap each other to create an effect that emulates the texture of soapy suds. To further add variation to user interactions, the more soap that the user picks up, the denser the Perlin noise suds will look.</p>
+
+            <div class="flexbox stretch">
+                <figure>
+                    <div class="modal-wrapper">
+                        <img class="modal-target" alt="Less soap is used, Perlin noise is less dense." src="img/process1_8.png">
+                    </div>
+                    <figcaption>When less soap is used, Perlin noise is less dense.</figcaption>
+                </figure>
+                <figure>
+                    <div class="modal-wrapper">
+                        <img class="modal-target" alt="When more soap is used, Perlin noise is more dense." src="img/process1_9.png">
+                    </div>
+                    <figcaption>When more soap is used, Perlin noise is more dense.</figcaption>
+                </figure>
             </div>
 
-            <img src="img/process1_10.png">
-            <p>
-                    The fractal graphics require the use of recursion methods which means that a function in Java will call upon itself. Through the use of recursion, I was able to generate a plant graphic that branches out into smaller and smaller branches allowing it to resemble a life-like tree (circled in red).
-                    <br><br>
-                    Finally, decorator patterns are used to dress up the dog towards the end of the simulation. The use of decorator patterns allows the users to add new functionality (in this case: dress-up objects) to an object (the dog) without altering the objects original methods. In 'Pet Salon', the user can add ribbons, bows and jewelery to the dog by clicking the bins that hold the items and then clicking anywhere on the dog to apply the decorator.
+            <h4>Fractal Graphics</h4>
+
+            <p>The fractal graphics require the use of recursion methods which means that a function in Java will call upon itself. Through the use of recursion, I was able to generate a plant graphic that branches out into smaller and smaller branches allowing it to resemble a life-like tree.</p>
+
+            <h4>Decorator Patterns</h4>
+
+            <p>Finally, Decorator patterns are used to dress up the dog towards the end of the simulation. The use of Decorator patterns allows the users to add new functionality (in this case: dress-up objects) to an object (the dog) without altering the objects original methods. In 'Pet Salon', the user can add ribbons, bows and jewelery to the dog by clicking the bins that hold the items and then clicking anywhere on the dog to apply the decorator.</p>
+
+            <div class="flexbox stretch">
+                <figure>
+                    <div class="modal-wrapper">
+                        <img class="modal-target" alt="Perlin noise is used to draw the tree graphic circled in red. The ribbons, bows and jewelery were added to the dog using Decorator patterns." src="img/process1_10.png">
+                    </div>
+                    <figcaption>Perlin noise is used to draw the tree graphic circled in red. The ribbons, bows and jewelery were added to the dog using Decorator patterns.</figcaption>
+                </figure>
+            </div>
+
+
+            <h3 class="margin_top">Reflection</h3>
+
+            <p>'Pet Salon' was a successful project because I was able to complete the project and all its requirements within the time that it was assigned.</p>
+            <p>One optional component for the project was include to creative elements that show that we went above and beyond the project requirements. By including more of these creative elements, we get awarded with more marks. I expanded my project from the project requirements by including elements like various different types of decorator objects (ribbons, bows and jewelery). And within these categories, the objects also have randomized designs: 3 ribbons, 3 bows and 2 jewelery. The variation in suds generated is another example of these creative elements.</p>
+
+            <div class="flexbox stretch">
+                <figure>
+                    <div class="modal-wrapper">
+                        <img class="modal-target" alt="Perlin noise is used to draw the tree graphic circled in red. The ribbons, bows and jewelery were added to the dog using Decorator patterns." src="img/process1_11.png">
+                    </div>
+                    <figcaption>Perlin noise is used to draw the tree graphic circled in red. The ribbons, bows and jewelery were added to the dog using Decorator patterns.</figcaption>
+                </figure>
+            </div>
+
+            <p>If I were to do this project again, I would have included more animations into the simulation to make the simulation more life-like rather than a static environment that the user interacts with.
             </p>
-                
-            <p>
-                'Pet Salon' was a successful project because I was able to complete the project and all its requirements within the time that it was assigned. One optional component for the project was include to creative elements that show that we went above and beyond the project requirements. By including more of these creative elements, we get awarded with more marks. I expanded my project from the project requirements by including elements like various different types of decorator objects (ribbons, bows and jewelery). And within these categories, the objects also have randomized designs: 3 ribbons, 3 bows and 2 jewelery. The variation in suds generated is another example of these creative elements. If I were to do this project again, I would have included more animations into the simulation to make the simulation more life-like rather than a static environment that the user interacts with.
-            </p>
-            <img src="img/process1_11.png">
 
             <p class="low_opacity">2022 | Programs: Procreate, Eclipse (Java)</p>
         </section>
