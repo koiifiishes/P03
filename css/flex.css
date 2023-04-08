@@ -35,6 +35,10 @@
     text-align: right;
 } */
 
+.home{
+    margin-top: 5rem;
+}
+
 .flexbox_home{
     justify-content: stretch;
 }
@@ -116,6 +120,9 @@
         margin: 3rem 7rem 3rem 7rem;
     }
 
+    .home{
+        margin-top: 5rem;
+    }
 }
 
 @media screen and (max-width: 65rem){
@@ -124,6 +131,10 @@
         transition-property: margin;
         transition: 0.5s;
         margin: 3rem;
+    }
+
+    .home{
+        margin-top: 5rem;
     }
 
 }
@@ -190,6 +201,15 @@
 
     .flexbox_item_info .padding_right{
         padding-bottom: 1rem;
+    }
+
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80% !important;
+        height: auto !important;
+        opacity: 1 !important;
+        max-width: 1200px;
     }
 
 }

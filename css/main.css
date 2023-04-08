@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;350;400&display=swap');
 
-body{
+html, body{
     background-color: #fefaec;
     color: #8c8299;
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1em;
 }
 
 nav, .button{
@@ -107,6 +108,10 @@ code{
 /* used in work.html flexbox_sub*/
 .padding_left{
     padding-left: 1rem;
+}
+
+.margin_top{
+    margin-top: 3rem;
 }
 
 .flexbox_margin{

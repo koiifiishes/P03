@@ -32,22 +32,24 @@
   .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
+    width: auto;
+    height: 90%;
     opacity: 1 !important;
-    max-width: 1200px;
+    /* max-width: 1200px; */
   }
+
   
   /* Caption of Modal Image */
   .modal-caption {
     margin: auto;
     display: block;
-    width: 80%;
+    width: 70%;
     max-width: 1200px;
     text-align: center;
     color: white;
-    font-weight: 700;
-    font-size: 1em;
-    margin-top: 32px;
+    font-weight: 350;
+    line-height: 1.5rem;
+    margin-top: 1rem;
   }
   
   /* Add Animation */
@@ -98,5 +100,6 @@ figcaption{
     color: #e4c2cd;
     padding-top: 1rem;
     font-weight: 350;
+    line-height: 1.5rem;
 }
   
