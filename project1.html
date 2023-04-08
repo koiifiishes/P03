@@ -9,6 +9,8 @@
 
     <link href="css/main.css" rel="stylesheet">
     <link href="css/flex.css" rel="stylesheet">
+    <link href="css/modal.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -38,21 +40,67 @@
         <h1><span class="highlight">GAME </span>DESIGN : PET SALON</h1>
         <h2>Role: Programmer and Lead Artist</h2>
 
-        <section class="add_padding">
-            
-            <div class="flexbox">
+        <section class="add_padding align_text_left">
+
+            <!-- Reference used: https://www.w3schools.com/html/html5_video.asp -->
+            <video controls>
+                <source src="img/video.mp4" type="video/mp4">
+            </video>
+
+            <h3>Introduction</h3>
+            <p>'Pet Salon' is a multimedia simulation created as a final project for IAT 265 (Multimedia Programming for
+                Art and Design) in Spring 2022 at Simon Fraser University. The project consists of images, text and
+                music implemented using Java to create an interactive simulation for the user.
+            </p>
+            <!-- <div class="flexbox">
                 <img src="img/process1_4.png" class="flexbox_img img_third">
                 <img src="img/process1_1.png" class="flexbox_img img_third">
                 <img src="img/process1_3.png" class="flexbox_img img_third">
+            </div> -->
+            <hr>
+            <h3>The Problem</h3>
+
+            <p>I was tasked with creating an interactive simulation using Java that fulfilled a set of basic criteria, these included:
+                <ul>
+                    <li>Generate perlin noise graphics</li>
+                    <li>Use recursion to create fractal graphics</li>
+                    <li>Use decorator patterns</li>
+                </ul>
+            </p>
+            <hr>
+
+            <h3>Limitations</h3>
+
+            <p>I was familar with generating simple shapes using Java's Graphics/Graphics2D class, but creating the graphics like perlin noise and fractal graphics required understanding how for-loops and recursive functions would affect the Graphics class.</p>
+            <p>We were taught factory classes for decorator patterns a week before the project due date, so I did not have much knowledge of the topic prior. I had to learn how to apply them to my project within a small time frame.</p>
+
+            <h3>Solution</h3>
+
+            <h4>Sketches</h4>
+
+            <p></p>
+
+            <div class="flexbox">
+                <figure>
+                    <div class="modal-wrapper">
+                        <img class="modal-target" alt="Initial sketch for Pet Salon." src="img/process1_5.PNG">
+                    </div>
+                    <figcaption>Initial sketch for Pet Salon.</figcaption>
+                </figure>
+                <figure>
+                    <div class="modal-wrapper">
+                        <img class="modal-target" alt="Planning the colours for Pet Salon." src="img/process1_6.PNG">
+                    </div>
+                    <figcaption>Planning the colours for Pet Salon.</figcaption>
+                </figure>
             </div>
 
-            <p>'Pet Salon' is a multimedia simulation created as a final project for IAT 265 (Multimedia Programming for
-                Art and Design) in Spring 2022 at Simon Fraser University. The project consists of images, text and
-                music implemented using Java to create an interactive simulation for the user.</p>
-            <p>To begin the assignment, I had create a proposal with a short description of the project and outline some
+            <h3>Reflection</h3>
+            
+            <p>To begin the assignment, I came up with a proposal with a short description of the project and outline some
                 main coding elements that I plan to include. In 'Pet Salon', the user is guided through a process of
                 operating a dog grooming salon. The user can follow the instructions through series of mouse clicks,
-                mouse drags, animations, and more. My proceess began with creating a list of items and tasks that the
+                mouse drags, animations, and more. My process began with creating a list of items and tasks that the
                 user can preform in the simulation: light switches to turn on the lights, soap dispenser to get soap,
                 switches to turn on the shower, towel to dry the dog, ribbons and bandana to dress-up the dog, etc.
                 Based on this list, I started sketching out how I wanted these elements to be laid out in the
@@ -61,17 +109,7 @@
                 underneath my sketch roughly. I wanted to make sure all elements were distinct from one another so I had
                 to create enough contrast between them. I used a mix of light and dark colours between background and
                 foreground elements to push that distinction.</p>
-            <div class="flexbox">
-                <img src="img/process1_5.PNG" class="flexbox_img img_third">
-                <img src="img/process1_6.PNG" class="flexbox_img img_third">
-            </div>
-            <p>The project required a basic set of criteria to be integrated within the simulation, this included:
-            <ul>
-                <li>Generate perlin noise graphics</li>
-                <li>Use recursion to create fractal graphics</li>
-                <li>Use decorator patterns</li>
-            </ul>
-            </p>
+
             <div class="flexbox flexbox_margin">
                 <div class="flexbox_item">
                     <img src="img/process1_8.png" class="flexbox_item_sub flexbox_img">
@@ -97,8 +135,18 @@
 
             <p class="low_opacity">2022 | Programs: Procreate, Eclipse (Java)</p>
         </section>
+
+        <a href="work.html" class="button">View Other Projects</a>
     </div>
 
+    <!-- The Modal -->
+    <div id="modal" class="modal">
+        <span id="modal-close" class="modal-close">&times;</span>
+        <img id="modal-content" class="modal-content">
+        <div id="modal-caption" class="modal-caption"></div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
