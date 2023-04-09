@@ -153,39 +153,38 @@ p, ul{
     opacity: 30%;
 }
 
-.a_project{
-    color: #8c8299;
-    text-decoration: none;
-    position: relative;
-}
+/** Links **/
 
-/*Reference used: https://css-irl.info/animating-underlines/*/
-.a_project::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0.1em;
-    background-color: #8c8299;
-    opacity: 0;
-    transition: opacity 300ms, transform 300ms;
-  }
-  
-.a_project:hover::after, .a_project:focus::after {
-    opacity: 1;
-    transform: translate3d(0, 0.2em, 0);
-  }
-
+/*In Text Link*/
 .in_text{
     color: #e4c2cd;
+    /* text-decoration: none; */
+    text-underline-offset: 0.1rem;
+    transition-property: color, text-underline-offset;
+    transition-duration: 0.5s;
 }
 
 .in_text:hover, .in_text:focus{
-    color: #f5dce4;
-    text-decoration: none;
+    color: #8c8299;
+    /* text-decoration: underline; */
+    text-underline-offset: 0.5rem;
 }
 
+/*Project Title Link - used in work.html*/
+.title_project{
+    color: #8c8299;
+    text-decoration: none;
+    text-underline-offset: 0.1rem;
+    transition-property: text-underline-offset;
+    transition-duration: 0.5s;
+}
+  
+.title_project:hover, .title_project:focus {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+
+/*Link for buttons in work.html*/
 .link_button{
     background-color: #8c8299;
     color: #e4c2cd;
