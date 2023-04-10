@@ -1,5 +1,7 @@
+/** GOOGLE FONT: Josefin Sans https://fonts.google.com/specimen/Josefin+Sans **/
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;350;400&display=swap');
 
+/** STYLING FOR HTML AND BODY **/
 html, body{
     background-color: #fefaec;
     color: #8c8299;
@@ -8,12 +10,14 @@ html, body{
     font-size: 1.1em;
 }
 
+/**  STYLING FOR NAVIGATION MENU AND BUTTONS **/
 nav, .button{
     background-color: #8c8299;
     font-size: 0.8em;
     overflow: hidden;
 }
 
+/* Navigation button links */
 /* Reference used: https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-offset*/
 nav a, .button{
     color: #e4c2cd;
@@ -33,26 +37,21 @@ nav a:hover, nav a:focus, .button:hover, .button:focus{
     text-underline-offset: 0.5rem;
 }
 
+/* Navigation has a drop menu */
 /* Reference: https://codepen.io/nandun_malinda/pen/LvWpgL */
-.menu, .drop-menu {
+.drop-menu {
     list-style-type: none;
     padding: 0;
     margin: 0;
     font-size: 1em;
     font-weight: bold;
-}
-
-.menu li{
-    float: left;
-}
-
-.drop-menu {
     display: none;
     position: absolute;
     background-color: #8c8299;
     color: #e4c2cd;
 }
 
+/* Items within the drop menu and it's styling for link and hover*/
 .drop-menu-item {
     width: 100%;
 }
@@ -66,6 +65,7 @@ nav a:hover, nav a:focus, .button:hover, .button:focus{
     color: #e4c2cd;
 }
 
+/* Styling for items in the nav menu section*/
 .menu-item:hover .drop-menu {
     display: block;
 }
@@ -76,52 +76,26 @@ nav a:hover, nav a:focus, .button:hover, .button:focus{
     padding: 1rem;
 }
 
+/* Styling for the drop menu items to position them correctly */
 /*Reference used: http://jsfiddle.net/xj76zn77/1/*/
 .last ul{
     right: 0px;
     left: auto;
 }
 
+/** STYLING FOR SECTIONS **/
 section{
     margin: 1.5rem 0 1.5rem 0;
 }
 
+/** STYLING FOR CODES**/
 code{
     background-color: white;
     color: #a78fa6;
     padding: 1rem;
 }
 
-.no_margin{
-    margin: 0;
-}
-
-/* used in section class of work.html */
-.add_padding{
-    padding: 0 5rem 0 5rem;
-}
-
-.padding_right{
-    padding-right: 2rem;
-}
-
-/* used in work.html flexbox_sub*/
-.padding_left{
-    padding-left: 1rem;
-}
-
-.margin_top{
-    margin-top: 3rem;
-}
-
-.flexbox_margin{
-    margin-bottom: 1rem;
-}
-
-.float_right{
-    float: right;
-}
-
+/** TEXT STYLING **/
 h1{
     letter-spacing: 0.1rem;
     font-size: 2.5rem;
@@ -145,15 +119,17 @@ p, ul{
     background-color: #e4c2cd;
 }
 
+/* Styling to highlight text in another colour */
 .highlight{
     color: #e4c2cd;
 }
 
+/* Styling used in project.html to lower opacity of text */
 .low_opacity{
     opacity: 30%;
 }
 
-/** Links **/
+/** LINKS **/
 
 /*In Text Link*/
 .in_text{
@@ -204,82 +180,29 @@ p, ul{
     border-radius: 0.5rem;
 }
 
-
+/** IMAGES AND EXTRA ELEMENTS **/
+/* Draws a divider */
 .line{
     border-top: 5px dotted #a78fa6;
     opacity: 30%;
 }
 
+/* image at full width */
 img{
     width: 100%;
 }
 
+/* image at half width */
 .img_half{
     width: 50%;
 }
 
-.img_third, .width_third{
-    width: 33%;
-}
-
-.img_quart{
-    width: 25%;
-}
-
-.box_main{
-    margin: 3rem 12rem 3rem 12rem;
-    text-align: center;
-}
-
-.box_main_wide{
-    margin: 3rem 5rem 3rem 5rem;
-    text-align: center;
-}
-
+/* video at full width */
 video{
     width: 100%;
 }
 
-footer{
-    background-color: #8c8299;
-    color: #e4c2cd;
-    font-size: 0.8rem;
-    justify-content: center;
-    align-items: center;
-    padding: 1.5rem;
-    margin-top: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.footer_box{
-    border-top: 5px dotted rgb(228,194,205,0.5);
-    padding-top: 1rem;
-    display: flex;
-    flex-direction: row;
-}
-
-footer p{
-    font-weight: 350;
-}
-
-footer a{
-    color: #e4c2cd;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    margin: 0 2rem 0 2rem;
-    text-decoration: none;
-    text-underline-offset: 0.1rem;
-    transition-property: color, text-underline-offset;
-    transition-duration: 0.5s;
-}
-
-footer a:hover, footer a:focus{
-    color: white;
-    text-decoration: underline;
-    text-underline-offset: 0.5rem;
-}
-
+/** COLOUR PALETTES **/
 .palette{
     width: 75px;
     height: 50px;

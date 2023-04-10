@@ -1,3 +1,18 @@
+/** MAIN CONTAINERS **/
+/* Container with larger margins used for all pages except work.html */
+.box_main{
+    margin: 3rem 12rem 3rem 12rem;
+    text-align: center;
+}
+
+/* Container with smaller margins used only for work.html */
+.box_main_wide{
+    margin: 3rem 5rem 3rem 5rem;
+    text-align: center;
+}
+
+/** FLEXBOX CONTAINERS **/
+/* Main flexbox container and it's items and sub-items */
 .flexbox{
     display: flex;
     align-items: flex-start;
@@ -18,6 +33,7 @@
     flex-direction: row;
 }
 
+/* Used in home.html to divide up tools and skills*/
 .flexbox_item_info{
     display: flex;
     flex: 1 1 auto;
@@ -25,20 +41,12 @@
     flex-direction: row;
 }
 
-.flexbox_item_info ul, .flexbox_item_info li{
-    list-style-type: none;
-    padding: 0;
-}
-
-/* 
-.flexbox_home:first-child{
-    text-align: right;
-} */
-
+/* Class for home.html to add more margin to the top */
 .home{
     margin-top: 5rem;
 }
 
+/* Flexbox for home to stretch its child items so they align together */
 .flexbox_home{
     justify-content: stretch;
 }
@@ -48,6 +56,7 @@
     
 }
 
+/* Flexbox used for work.html to display the project previews */
 .flexbox_works{
     display:flex;
     flex: 1 1 0;
@@ -65,14 +74,9 @@
 .flexbox_works:hover, .flexbox_works:focus{
     box-shadow: 0.5rem 0.5rem #8c8299;
     opacity: 0.8;
-    /* cursor: pointer; */
 }
 
-.flexbox_img{
-    flex: 1 1 0;
-    padding: 0.5rem;
-}
-
+/* Extra styling classes to tag onto flexboxes if necessary - used where flexbox is same except certain styling*/
 .column{
     flex-direction: column;
 }
@@ -97,6 +101,37 @@
     text-align: left;
 }
 
+/* used in home.html */
+.no_margin{
+    margin: 0;
+}
+
+/* used in section class of work.html */
+.add_padding{
+    padding: 0 5rem 0 5rem;
+}
+
+/* used in home.html */
+.padding_right{
+    padding-right: 2rem;
+}
+
+/* used in work.html flexbox_sub*/
+.padding_left{
+    padding-left: 1rem;
+}
+
+/* used in project.html files */
+.margin_top{
+    margin-top: 3rem;
+}
+
+/* Used in nav menu in all pages */
+.float_right{
+    float: right;
+}
+
+/* Flexbox used for style guide to display the colour palettes*/
 .flexbox_palette{
     display: flex;
     align-items: flex-start;
@@ -113,6 +148,7 @@
     text-align: center;
 }
 
+/** MEDIA QUERIES **/
 @media screen and (max-width: 75rem){
     .box_main, .box_main_wide{
         transition-property: margin;
@@ -152,7 +188,7 @@
     }
 
 
-    img, .img_half, .img_third, .img_quart{
+    img, .img_half{
         width: 100%;
         margin-bottom: 1rem;
     }
@@ -161,16 +197,8 @@
         margin: 0;
     }
 
-    .width_third{
-        width: 100%;
-    }
-
     .add_padding, .padding_right, .padding_left{
         padding: 0;
-    }
-
-    .flexbox_margin{
-        margin: 0;
     }
 
     .flexbox_home h1{
