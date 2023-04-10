@@ -1,0 +1,42 @@
+/** FOOTER CSS **/
+footer{
+    background-color: #8c8299;
+    color: #e4c2cd;
+    font-size: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Flexbox for inside the border to organize the links */
+.footer_box{
+    border-top: 5px dotted rgb(228,194,205,0.5);
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+footer p{
+    font-weight: 350;
+}
+
+/* Styling for footer links */
+footer a{
+    color: #e4c2cd;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin: 0 2rem 0 2rem;
+    text-decoration: none;
+    text-underline-offset: 0.1rem;
+    transition-property: color, text-underline-offset;
+    transition-duration: 0.5s;
+}
+
+footer a:hover, footer a:focus{
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
