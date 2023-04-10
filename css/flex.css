@@ -121,6 +121,11 @@
     padding-left: 1rem;
 }
 
+/* used in contact.html */
+.padding_top{
+    padding-top: 1rem;
+}
+
 /* used in project.html files */
 .margin_top{
     margin-top: 3rem;
