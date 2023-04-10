@@ -165,14 +165,6 @@
         width: 100%;
     }
 
-    /* Reference used: https://css-tricks.com/full-width-containers-limited-width-parents/
-    .img_full_width{
-        width: 100vw;
-        position: relative;
-        margin-left: -50vw;
-        margin-right: -50vw;
-    } */
-
     .add_padding, .padding_right, .padding_left{
         padding: 0;
     }
@@ -210,6 +202,21 @@
         height: auto !important;
         opacity: 1 !important;
         max-width: 1200px;
+    }
+
+    nav, nav .flexbox, footer, .footer_box{
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .last ul{
+        left: auto;
+        right: auto;
+    }
+
+    footer a{
+        margin-top: 1rem;
     }
 
 }
