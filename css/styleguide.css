@@ -1,3 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Source+Code+Pro&display=swap');
+
 .styleguide_main{
     margin: 3rem;
+}
+
+.styleguide_sub{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0.5rem;
+}
+
+.styleguide_sidenav{
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+}
+
+.styleguide_side_item{
+    margin: 0.5rem 0 0.5rem 0;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 0 10px #f0e7d9;
+}
+
+.sidenav_item{
+    margin: 1rem 0 1rem 0;
+}
+
+.sidenav_item a{
+    text-decoration: none;
+    color: #8c8299;
+    text-underline-offset: 0.1rem;
+    transition-property: color, text-underline-offset;
+    transition-duration: 0.5s;
+}
+
+.sidenav_item a:hover, .sidenav_item a:focus{
+    text-decoration: none;
+    color: #e4c2cd;
+    text-decoration: underline 0.15rem;
+    text-underline-offset: 0.5rem;
+}
+
+.styleguide_right{
+    flex: 4 1 0;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.styleguide_sub_item{
+    margin: 0.5rem 0 0.5rem 0;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 0 10px #f0e7d9;
+}
+
+/** STYLING FOR CODES**/
+code{
+    background-color: rgb(167,143,166,0.3);
+    border-radius: 0.2rem;
+    color: #a78fa6;
+    padding: 1rem;
+    margin: 1rem;
+    display: block;
+}
+
+/* Flexbox used for style guide to display the colour palettes*/
+.colour_palette{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Source Code Pro', sans-serif;
+}
+
+/** TEXT ELEMENTS **/
+
+.h2_style{
+    border-bottom: 5px solid #e4c2cd;
+    padding-bottom: 0.2rem;
+}
+
+/** BACK TO TOP BUTTON **/
+/* Reference used: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top*/
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #a78fa6;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #e4c2cd;
+  }
+
+/** COLOUR PALETTES **/
+.palette{
+    width: 5rem;
+    height: 3rem;
+    margin: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.8rem;
+}
+
+.purple{
+    background-color: #8c8299;
+}
+
+.violet{
+    background-color: rgb(167,143,166,0.3);
+}
+
+.pink{
+    background-color: #e4c2cd;
+}
+
+.light_yellow{
+    background-color: #fefaec;
+    border: 1px solid #f0e7d9;
+}
+
+.white{
+    background-color: white;
+    border: 1px solid #ebebeb;
 }
