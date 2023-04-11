@@ -88,13 +88,6 @@ section{
     margin: 1.5rem 0 1.5rem 0;
 }
 
-/** STYLING FOR CODES**/
-code{
-    background-color: white;
-    color: #a78fa6;
-    padding: 1rem;
-}
-
 /** TEXT STYLING **/
 h1{
     letter-spacing: 0.1rem;
@@ -113,10 +106,6 @@ p, ul{
     font-weight: 350;
     line-height: 1.5rem;
     font-size: 1rem;
-}
-
-.h2_styleguide{
-    background-color: #e4c2cd;
 }
 
 /* Styling to highlight text in another colour */
@@ -200,34 +189,4 @@ img{
 /* video at full width */
 video{
     width: 100%;
-}
-
-/** COLOUR PALETTES **/
-.palette{
-    width: 75px;
-    height: 50px;
-}
-
-.palette_border{
-    border: 1px solid #a78fa6;
-}
-
-.purple{
-    background-color: #8c8299;
-}
-
-.violet{
-    background-color: #e4c2cd;
-}
-
-.pink{
-    background-color: #f5dce4;
-}
-
-.lightyellow{
-    background-color: #fefaec;
-}
-
-.white{
-    background-color: white;
 }

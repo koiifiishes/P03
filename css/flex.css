@@ -101,6 +101,10 @@
     text-align: left;
 }
 
+.align_text_center{
+    text-align: center;
+}
+
 /* used in home.html */
 .no_margin{
     margin: 0;
@@ -134,23 +138,6 @@
 /* Used in nav menu in all pages */
 .float_right{
     float: right;
-}
-
-/* Flexbox used for style guide to display the colour palettes*/
-.flexbox_palette{
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.flexbox_palette .flexbox_sub{
-    display: flex;
-    flex: 0 1 0;
-    margin: 0 2rem 0 2rem;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
 }
 
 /** MEDIA QUERIES **/
@@ -250,6 +237,16 @@
 
     footer a{
         margin-top: 1rem;
+    }
+
+    .styleguide_sub{
+        flex-direction: column;
+    }
+
+    .styleguide_sidenav, .styleguide_right{
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
 }
