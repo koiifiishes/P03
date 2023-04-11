@@ -17,24 +17,26 @@
 </head>
 
 <body>
+    <!-- Back to Top Button -->
+    <!-- Reference used: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
 
     <header>
 
         <nav>
-            
             <a href="home.html" class="menu-item menu_button">Home</a>
             <div class="flexbox float_right">
-            <a href="contact.html" class="menu-item menu_button">Contact</a>
-            <a href="https://www.etsy.com/shop/sleepyamphy/" class="menu-item menu_button">Shop</a>
-            <div class="menu-item last">
-                <a href="work.html" class="menu_button">My Work <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                <ul class="drop-menu">
-                    <li class="drop-menu-item"><a href="project1.html" class="menu_button">Pet Salon</a></li>
-                    <li class="drop-menu-item"><a href="project2.html" class="menu_button">The Guardian</a></li>
-                </ul>
+                <a href="contact.html" class="menu-item menu_button">Contact</a>
+                <a href="https://www.etsy.com/shop/sleepyamphy/" class="menu-item menu_button">Shop</a>
+                <div class="menu-item last">
+                    <a href="work.html" class="menu_button">My Work <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <ul class="drop-menu">
+                        <li class="drop-menu-item"><a href="project1.html" class="menu_button">Pet Salon</a></li>
+                        <li class="drop-menu-item"><a href="project2.html" class="menu_button">The Guardian</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        
+
         </nav>
 
     </header>
@@ -42,99 +44,243 @@
     <div class="styleguide_main">
         <h1>Jennifer Wu Portfolio: Style Guide</h1>
 
-        <section id="text_elements">
-            <h2 class="h2_styleguide">Text Elements</h2>
+        <!-- Side navigation for referencing each section of style guide -->
+        <div class="styleguide_sub">
+            <div class="styleguide_sidenav">
+                <div class="styleguide_side_item">
+                    <p>Go To Section</p>
 
-            <section id="heading_elements">
-                <h3>Levels of Headings & Paragraph</h3>
-                <h4>CSS Selectors:</h4>
-                <p>h1, h2, h3, h4, p</p>
-
-                <h4>Sample Code:</h4>
-                <code>
-                    &lt;h1&gt;H1 Heading&lt;/h1&gt;
-                    &lt;h2&gt;H2 Heading&lt;/h2&gt;      
-                    &lt;h3&gt;H3 Heading&lt;/h3&gt;     
-                    &lt;h4&gt;H4 Heading&lt;/h4&gt;
-                </code>
-
-                <h4>Rendered Code:</h4>
-                <h1>h1 element</h1>
-                <h2>h2 element</h2>
-                <h3>h3 element</h3>
-                <h4>h4 element</h4>
-                <p>paragraph</p>
-            </section>
-
-            <section id="stylized_text">
-                <h3>Coloured Stylization Text</h3>
-                <h4>CSS Selectors:</h4>
-                <p>.highlight</p>
-
-                <h4>Sample Code:</h4>
-                <code>
-                    &lt;p class="highlight"&gt;highlight&lt;/p&gt;
-                </code>
-
-                <h4>Rendered Code:</h4>
-                <p class="highlight">paragraph with stylization</p>
-            </section>
-
-        </section>
-
-        <section id="interactive_elements">
-            <h2 class="h2_styleguide">Interactive Elements</h2>
-
-            <section id="text_link">
-                <h3>In-Text Link</h3>
-                <h4>CSS Selectors:</h4>
-                <p>.in_text</p>
-
-                <h4>Sample Code:</h4>
-                <code>
-                    &lt;a href="#" class="in_text"&gt;In-Text Link&lt;/a&gt;
-                </code>
-
-                <h4>Rendered Code:</h4>
-                <p>This is an <a href="#" class="in_text">in-text link</a>, hover over it.</p>
-            </section>
-        </section>
-
-        <section id="brand_elements">
-            <h2 class="h2_styleguide">Brand Elements</h2>
-
-            <section id="colours">
-                <h3>Brand Colours</h3>
-                <div class="flexbox_palette">
-                    <div class="flexbox_sub">
-                        <div class="flexbox_sub_item palette purple"></div>
-                        <p class="flexbox_sub_item">#8C8299</p>
-                        <p class="flexbox_sub_item">Text Colour</p>
+                    <div class="sidenav_item">
+                    <a href="#colours">Colours</a>
                     </div>
-                    <div class="flexbox_sub">
-                        <div class="flexbox_sub_item palette violet"></div>
-                        <p class="flexbox_sub_item">#E4C2CD</p>
-                        <p class="flexbox_sub_item">Navigation Text, Highlight Text, In-Text Link</p>
+
+                    <div class="sidenav_item">
+                    <a href="#typography">Typography</a>
                     </div>
-                    <div class="flexbox_sub">
-                        <div class="flexbox_sub_item palette pink"></div>
-                        <p class="flexbox_sub_item">#F5DCE4</p>
-                        <p class="flexbox_sub_item">In-Text Link Hover</p>
+
+                    <div class="sidenav_item">
+                    <a href="#nav">Navigation</a>
                     </div>
-                    <div class="flexbox_sub">
-                        <div class="flexbox_sub_item palette palette_border lightyellow"></div>
-                        <p class="flexbox_sub_item">#FEFAEC</p>
-                        <p class="flexbox_sub_item">Main Background Colour</p>
+
+                    <div class="sidenav_item">
+                    <a href="#buttons">Buttons</a>
                     </div>
-                    <div class="flexbox_sub">
-                        <div class="flexbox_sub_item palette palette_border white"></div>
-                        <p class="flexbox_sub_item">#FFFFFF</p>
-                        <p class="flexbox_sub_item">Background Colour</p>
+
+                    <div class="sidenav_item">
+                    <a href="#links">Links</a>
                     </div>
-                    
+
+                    <div class="sidenav_item">
+                    <a href="#figures">Figures</a>
+                    </div>
+
+                    <div class="sidenav_item">
+                    <a href="#project">Project Preview</a>
+                    </div>
+
+                    <div class="sidenav_item">
+                    <a href="#others">Others</a>
+                    </div>
+
+                    <div class="sidenav_item">
+                    <a href="#cite">Citations</a>
+                    </div>
                 </div>
-            </section>
-        </section>
+            </div>
+            
+            <div class="styleguide_right">
+                <!-- COLOUR PALETTE -->
+                <div class="styleguide_sub_item" id="colours">
+                    <h2 class="h2_style">Colour Palette</h2>
+                    <div class="colour_palette">
+                        <div class="">
+                            <div class="palette purple"></div>
+                            <p>#8C8299</p>
+                        </div>
+                        <div class="">
+                            <div class="palette pink"></div>
+                            <p>#F5DCE4</p>
+                        </div>
+                        <div class="">
+                            <div class="palette violet">30% OPACITY</div>
+                            <p>#A78FA6</p>
+                        </div>
+                        <div class="">
+                            <div class="palette light_yellow"></div>
+                            <p>#FEFAEC</p>
+                        </div>
+                        <div class="">
+                            <div class="palette white"></div>
+                            <p>#FFFFFF</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TYPOGRAPHY -->
+                <div class="styleguide_sub_item" id="typography">
+                    <h2 class="h2_style">Typography</h2>
+                    <h3><span class="highlight">Font Family: </span>Josefin Sans</h3>
+                    <h3><span class="highlight">CSS selectors: </span>h1, h2, h3, h4, p</h3>
+                    <h1>Heading 1</h1>
+                    <h2>Heading 2</h2>
+                    <h3>Heading 3</h3>
+                    <h4>Heading 4</h4>
+                    <p>Paragraph</p>
+                    <p class="highlight">Highlighted</p>
+
+                    <h3 class="highlight">Sample Code: </h3>
+                    <code>
+                        &lt;h1&gt;Heading 1&lt;/h1&gt;<br>
+                        &lt;h2&gt;Heading 2&lt;/h2&gt;<br>
+                        &lt;h3&gt;Heading 3&lt;/h3&gt;<br>
+                        &lt;h4&gt;Heading 4&lt;/h4&gt;<br>
+                        &lt;p&gt;Paragraph&lt;/p&gt;<br>
+                        &lt;p class="highlight"&gt;Paragraph&lt;/p&gt;<br>
+                    </code>
+                </div>
+            
+                <!-- NAVIGATION BAR/ELEMENT -->
+                <div class="styleguide_sub_item" id="nav">
+                    <h2 class="h2_style">Navigation Elements</h2>
+                    <h3><span class="highlight">CSS selectors: </span>nav, nav a,  .menu-item, .menu-button, .flexbox, .float_right, .last, .drop-menu, .drop-menu-item</h3>
+                    <nav>
+                        <a href="#" class="menu-item menu_button">Nav Item</a>
+                        <div class="flexbox float_right">
+                            <a href="#" class="menu-item menu_button">Nav Item</a>
+                            <div class="menu-item last">
+                                <a href="#" class="menu_button">Dropdown <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <ul class="drop-menu">
+                                    <li class="drop-menu-item"><a href="#" class="menu_button">Dropdown 1</a></li>
+                                    <li class="drop-menu-item"><a href="#" class="menu_button">Dropdown 2</a></li>
+                                </ul>
+                            </div>
+                    </nav>
+                    <h3 class="highlight">Sample Code: </h3>
+                    <code>
+                        &lt;nav&gt;<br>
+                        &lt;a href="#" class="menu-item menu_button">Nav Item &lt;/a&gt;<br>
+                        &lt;div class="flexbox float_right"&gt;<br>
+                        &lt;a href="#" class="menu-item menu_button">Nav Item &lt;/a&gt;<br>
+                        &lt;div class="menu-item last"&gt;<br>
+                        &lt;a href="#" class="menu_button">Dropdown  &lt;i class="fa fa-angle-down" aria-hidden="true"&gt;&lt;/i&gt;&lt;/a&gt;<br>
+                        &lt;ul class="drop-menu"&gt;<br>
+                        &lt;li class="drop-menu-item"&gt; &lt;a href="#" class="menu_button"&gt;Dropdown 1 &lt;/a&gt; &lt;/li&gt;<br>
+                        &lt;li class="drop-menu-item"&gt; &lt;a href="#" class="menu_button"&gt;Dropdown 2 &lt;/a&gt; &lt;/li&gt;<br>
+                        &lt;/ul&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;/nav&gt;<br>
+                    </code>
+                </div>
+
+                <!-- BUTTONS -->
+                <div class="styleguide_sub_item" id="buttons">
+                    <!-- BUTTON STYLE 1 -->
+                    <h2 class="h2_style">Buttons</h2>
+                    <h3><span class="highlight">Button 1:</span> View Process</h3>
+                    <h3><span class="highlight">CSS selector: </span>.link_button</h3>
+                    <a href="#" class="link_button align_text_center">View process</a>
+                    <h3 class="highlight">Sample Code: </h3>
+                    <code>
+                        &lt;a href="#" class="link_button"&gt;View process&lt;/a&gt;
+                    </code>
+                    <div class="line"></div>
+                    <!-- BUTTON STYLE 2 -->
+                    <h3><span class="highlight">Button 2:</span> View Other Project</h3>
+                    <h3><span class="highlight">CSS selector: </span>.button</h3>
+                    <a href="work.html" class="button">View Other Projects</a>
+                    <h3 class="highlight">Sample Code: </h3>
+                    <code>
+                        &lt;a href="work.html" class="button"&gt;View Other Projects&lt;/a&gt;
+                    </code>
+                </div>
+
+                <!-- IN TEXT LINKS -->
+                <div class="styleguide_sub_item" id="links">
+                    <h2 class="h2_style">In Text Links</h2>
+                    <h3><span class="highlight">CSS selector: </span>.in_text</h3>
+                    <p>A paragraph with <a href="#" class="in_text">in text link</a> inside.</p>
+
+                    <h3 class="highlight">Sample Code: </h3>
+                    <code>
+                        &lt;a href="#" class="in_text"&gt;in text link&lt;/a&gt;
+                    </code>
+                </div>
+
+                <!-- FIGURES AND FIGCAPTION -->
+                <div class="styleguide_sub_item" id="figures">
+                    <h2 class="h2_style">Figures & Figcaption</h2>
+                    <h3><span class="highlight">CSS selectors: </span>figure, figcaption, .modal-wrapper, .modal-target</h3>
+                    <div class="flexbox stretch img_half">
+                        <figure>
+                            <div class="modal-wrapper">
+                                <img class="modal-target" alt="Figure caption goes here." src="img/process1_5.PNG">
+                            </div>
+                            <figcaption>Figure caption goes here.</figcaption>
+                        </figure>
+                    </div>
+                    <h3 class="highlight">Sample Code: </h3>
+                    <code>
+                        &lt;figure&gt;<br>
+                        &lt;div class="modal-wrapper"&gt;<br>
+                        &lt;img class="modal-target" alt="Figure caption goes here." src="img/process1_5.PNG"&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;figcaption&gt;Figure caption goes here.&lt;/figcaption&gt;<br>
+                        &lt;/figure&gt;<br>
+                    </code>
+                </div>
+
+                <!-- PROJECT PREVIEW -->
+                <div class="styleguide_sub_item" id="project">
+                    <h2 class="h2_style">Project Preview</h2>
+                    <h3><span class="highlight">CSS selectors: </span>.flexbox_works, .title_project, .link_button</h3>
+                    <div class="flexbox_works">
+                        <h2><a href="#" class="title_project">Project Title</a></h2>
+                        <a href="#"><img src="img/process1_1.png"></a>
+                        <p>A short project description.</p>
+                        <a href="#" class="link_button">View process</a>
+                    </div>
+                    <h3 class="highlight">Sample Code: </h3>
+                    <code>
+                        &lt;div class="flexbox_works"&gt;<br>
+                        &lt;h2&gt;&lt;a href="#" class="title_project">Project Title&lt;/a&gt;&lt;/h2&gt;<br>
+                        &lt;a href="#">&lt;img src="img/process1_1.png"&gt;&lt;/a&gt;<br>
+                        &lt;p&gt;A short project description.&lt;/p&gt;<br>
+                        &lt;a href="#" class="link_button"&gt;View process&lt;/a&gt;<br>
+                        &lt;/div&gt;
+                    </code>
+                </div>
+
+                <!-- OTHER ELEMENTS -->
+                <div class="styleguide_sub_item" id="others">
+                    <h2 class="h2_style">Other Elements</h2>
+                    <h3>Divider Line</h3>
+                    <h3><span class="highlight">CSS selector: </span>.line</h3>
+                    <div class="line"></div>
+                    <h3 class="highlight">Sample Code: </h3>
+                    <code>
+                        &lt;div class="line"&gt;&lt;/div&gt;
+                    </code>
+                </div>
+
+                <!-- CITATIONS -->
+                <div class="styleguide_sub_item" id="cite">
+                    <h2 class="h2_style">Citations</h2>
+                    <h3>Fonts: </h3>
+                    <p>Josefin Sans: https://fonts.google.com/specimen/Josefin+Sans</p>
+                    <p>Source Code Pro (Style Guide Hex Code Font): https://fonts.google.com/specimen/Source+Code+Pro</p>
+                    <h3>Code Referenced: </h3>
+                    <p>Flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/</p>
+                    <p>Scroll to Top: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top</p>
+                    <p>Text Underline Offset: https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-offset</p>
+                    <p>Dropdown Menu: https://codepen.io/nandun_malinda/pen/LvWpgL</p>
+                    <p>Positioning Dropdown Menu Items: http://jsfiddle.net/xj76zn77/1/</p>
+                    <p>Image Modal: https://codepen.io/sinisag/pen/vPEajE</p>
+                    <p>Font Awesome Icons: https://fontawesome.com/v4/</p>
+                </div>
+
+            </div>
+            
+        </div>
     </div>
 
     <footer>
@@ -148,6 +294,16 @@
             <a href="work.html">My Work</a>
         </div>
     </footer>
+
+    <!-- /*Reference used: https://codepen.io/sinisag/pen/vPEajE*/ -->
+    <!-- The Modal -->
+    <div id="modal" class="modal">
+        <span id="modal-close" class="modal-close">&times;</span>
+        <img id="modal-content" class="modal-content">
+        <div id="modal-caption" class="modal-caption"></div>
+    </div>
+
+    <script src="js/script.js"></script>
 
 </body>
 
